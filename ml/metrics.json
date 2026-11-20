@@ -1,0 +1,58 @@
+{
+  "dataset_rows": 489,
+  "feature_count": 54,
+  "train_rows": 391,
+  "test_rows": 98,
+  "label_counts": {
+    "control_no": 156,
+    "diagnosed_yes": 333
+  },
+  "holdout_split": "80/20 stratified random split; random_state=42",
+  "accuracy": 0.7449,
+  "precision_diagnosed": 0.7442,
+  "recall_diagnosed": 0.9552,
+  "f1_diagnosed": 0.8366,
+  "roc_auc": 0.7309,
+  "confusion_matrix_labels": [
+    "actual_control_no",
+    "actual_diagnosed_yes"
+  ],
+  "confusion_matrix": [
+    [
+      9,
+      22
+    ],
+    [
+      3,
+      64
+    ]
+  ],
+  "classification_report": {
+    "control_no": {
+      "precision": 0.75,
+      "recall": 0.2903225806451613,
+      "f1-score": 0.4186046511627907,
+      "support": 31.0
+    },
+    "diagnosed_yes": {
+      "precision": 0.7441860465116279,
+      "recall": 0.9552238805970149,
+      "f1-score": 0.8366013071895425,
+      "support": 67.0
+    },
+    "accuracy": 0.7448979591836735,
+    "macro avg": {
+      "precision": 0.747093023255814,
+      "recall": 0.6227732306210881,
+      "f1-score": 0.6276029791761666,
+      "support": 98.0
+    },
+    "weighted avg": {
+      "precision": 0.7460251542477456,
+      "recall": 0.7448979591836735,
+      "f1-score": 0.7043778751810802,
+      "support": 98.0
+    }
+  },
+  "warning": "Record-level split only. If multiple recordings belong to the same participant, metrics may be optimistic. Independent subject-level validation is required."
+}
